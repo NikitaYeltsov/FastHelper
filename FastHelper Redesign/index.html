@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FastHelper — quick access to tools</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="FastHelper">
+        <span class="logo-text">FASTHELPER</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main menu">
+        <a href="index.html" class="nav-link active">Home</a> 
+      </nav>
+
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Theme switcher">
+        <span class="theme-icon" aria-hidden="true">🌤️</span>
+        <span class="theme-text">Light</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>All the tools you need in one place</h1>
+      <p>No more searching separately. Quick access to popular online services.</p>
+
+      <form class="search" role="search" aria-label="Search by tools">
+        <input id="searchInput" type="search" placeholder="Find Docs, Canva, Notion…" autocomplete="off" />
+        <button type="button" id="clearSearch" aria-label="Clear search">✕</button>
+      </form>
+
+      <div class="filters" role="tablist" aria-label="Categories">
+        <button class="filter-btn active" data-category="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-category="graphics" role="tab">Graphics</button>
+        <button class="filter-btn" data-category="ai" role="tab">AI</button>
+        <button class="filter-btn" data-category="cloud" role="tab">Cloud</button>
+        <button class="filter-btn" data-category="comms" role="tab">Communications</button>
+      </div>
+    </div>
+  </section>
+
+  <main class="container" id="toolsContainer" aria-live="polite">
+   
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>FastHelper © 2025 · Created by ORT1K</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
