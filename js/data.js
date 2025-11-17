@@ -76,11 +76,11 @@ const TOOLS = [
   },
   
     {
-    name: "Twitch",
-    url: "https://www.twitch.tv",
+    name: "Classroom",
+    url: "https://classroom.google.com/u/0/?pli=1",
     description: "Social network",
     category: "comms",
-    icon: "assets/icons/tvich.png"
+    icon: "assets/icons/Google-Classroom-Logo.png"
   },
 
    {
@@ -107,5 +107,6 @@ const TOOLS = [
     icon: "assets/icons/copilot-color.png"
   },
 ];
+
 
 
